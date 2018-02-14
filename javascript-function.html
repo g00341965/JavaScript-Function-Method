@@ -18,7 +18,10 @@
             <p>Second number: </p><input type="text" name="num2" id="number2"><br><br>
             </form>
 
-            <button class="button" onclick="myFunction()">Try it</button>
+            <button class="button" onclick="myFunction()">Add</button>
+			<button class="button" onclick="mySubtractionFunction()">Subtract</button>
+			<button class="button" onclick="myMultiplicationFunction()">Multiply</button>
+			<button class="button" onclick="myDivisionFunction()">Divide</button>
         <p id="demo"></p>
 		
 
@@ -35,10 +38,70 @@
 		// Add them together
 		add = num1 + num2;
 		
+		
+		
+		
 		//display on the page
 		document.getElementById("demo").innerHTML = 'Addition' + add;
+	
 	}
+	
+	function mySubtractionFunction () {
+		// Read in two values from input boxes 
+		var num1 = parseInt(document.getElementById("number1").value);
+		var num2 = parseInt(document.getElementById("number2").value);
+		var add, subtract;
+		// subtract numbers
+		subtract = num1 - num2;
+		
+		
+		
+		//display on the page
+		document.getElementById("demo").innerHTML = 'Answer' + subtract;
+
+	
+	}
+	
+	
+	function myMultiplicationFunction () {
+		// Read in two values from input boxes 
+		var num1 = parseInt(document.getElementById("number1").value);
+		var num2 = parseInt(document.getElementById("number2").value);
+		var add, subtract;
+		// multiply numbers
+		multiply = num1 * num2;
+		
+		
+		
+		//display on the page
+		document.getElementById("demo").innerHTML = 'Answer' + multiply;
+		
+		
+	}
+		
+		
+		
+		function myDivisionFunction () {
+		// Read in two values from input boxes 
+		var num1 = parseInt(document.getElementById("number1").value);
+		var num2 = parseInt(document.getElementById("number2").value);
+		var add, subtract;
+		// divide numbers
+		divide = num1 / num2;
+		
+		
+		
+		//display on the page
+		document.getElementById("demo").innerHTML = 'Answer' + divide;
+
+	
+	}
+
+	
+	
+	
 </script>
+
 		
 		
   
